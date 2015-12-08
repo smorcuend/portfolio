@@ -1,0 +1,21 @@
+[{
+  "name": "CodeSchool",
+  "icon": "codeschool.svg",
+  "url": "//www.codeschool.com/users/384239"
+}, {
+  "name": "Codecademy",
+  "icon": "codecademy.svg",
+  "url": "//www.codecademy.com/smorcuend"
+}, {
+  "name": "Desarrollo de servicios con node.js",
+  "icon": "nodejs.png",
+  "url": "https://miriadax.net/files/10132/badge/535487ea-5297-4aba-9f9d-de5a4ec830af.pdf"
+}, {
+  "name": "HTML5 Game Development",
+  "icon": "HTML5-Game-Development.png",
+  "url": "https://www.udacity.com/certificate/cs255"
+}, {
+  "name": "Introducción al desarrollo web",
+  "icon": "idesweb.png",
+  "url": "https://miriadax.net/files/10132/badge/9473f521-43d8-4945-8f5d-9fc05bfd181c.pdf"
+}]

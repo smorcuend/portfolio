@@ -1,0 +1,66 @@
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+@import url(http://fonts.googleapis.com/css?family=Raleway,700|Raleway:400,700,700italic,400italic);
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Raleway', serif;
+}
+
+a.link {
+  text-decoration: none;
+  color          : #ddd;
+  font-weight    : bold;
+  text-shadow    : 0 0 1px rgba(0,0,0,0.3);
+
+  &:visited,
+  &:active,
+  &:focus {
+    color: #ccc;
+  }
+}
+
+.animation-fade {
+  opacity: 0;
+}
+
+.animation-faded {
+  opacity   : 1;
+  transition: opacity 1s linear 0.2s;
+}
+
+.browsehappy {
+  margin    : 0.2em 0;
+  background: #ccc;
+  color     : #000;
+  padding   : 0.2em 0;
+}
+
+.footer {
+  margin-top      : 3em;
+  padding         : 5px;
+  color           : #999;
+  background-color: rgba(8, 7, 7, 0.95);
+
+  .footer__item {
+    padding: 0.2em 0;
+  }
+}
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

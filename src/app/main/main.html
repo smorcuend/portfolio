@@ -1,0 +1,105 @@
+<md-content>
+
+  <section class="section-container jumbotron" layout-sm="column" layout-wrap layout="row">
+
+    <div class="cover-title" flex="100">
+      <h1>Sergio Morcuende</h1>
+      <h2>Senior Software Developer</h2>
+    </div>
+
+    <p class="lead" flex="50">
+      <img alt="I'm Sergio" class="photo" src="app/assets/images/photo.jpg">
+    </p>
+
+    <div class="social-bar" flex="50" hide-sm layout-align="end end" layout-wrap layout="row">
+      <a href="//github.com/smorcuend">
+        <md-button aria-label="My github" class="md-fab md-primary md-hue-2">
+          <ng-md-icon icon="github-circle" size="36"></ng-md-icon>
+        </md-button>
+      </a>
+      <a href="//www.linkedin.com/in/smorcuend">
+        <md-button aria-label="My Linkedin" class="md-fab md-primary md-hue-2">
+          <ng-md-icon icon="linkedin" size="36"></ng-md-icon>
+        </md-button>
+      </a>
+      <a href="//twitter.com/smorcuend">
+        <md-button aria-label="My Twitter" class="md-fab md-primary md-hue-2">
+          <ng-md-icon icon="twitter" size="36"></ng-md-icon>
+        </md-button>
+      </a>
+      <a href="//slides.com/smorcuend">
+        <md-button aria-label="My Slides" class="md-fab md-primary md-hue-2">
+          <ng-md-icon icon="slideshow" size="36"></ng-md-icon>
+        </md-button>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="section-container aboutme" layout-align="space-around center" layout-wrap layout="column">
+    <h2 class="section-title" layout="row">Hi there!</h2>
+    <div class="section-content" layout-wrap layout="row">
+      <p class="backcover-text">
+        I am Spanish boy born in the land of Don Quixote of La Mancha. I am passionate about that science and technology let us live in a best global society. Nowadays, Internet and the web technologies are my work chain.
+      </p>
+      <p>
+        I discover my love by Web technologies around the year 2011. In this moment, I realize the potential as a tool for change.
+      </p>
+      <p>
+        I try to translate some personal attributes that define me, such as, creativity, optimism, enthusiasm, into projects that i work.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-container projects" layout-align="space-around center" layout="column">
+    <h2 class="section-title" layout="row">My Projects</h2>
+
+    <timeline>
+      <timeline-event ng-repeat="event in main.projects">
+        <timeline-badge class="{{event.badgeClass}} hidden" when-not-visible="main.animateElementOut" when-visible="main.animateElementIn">
+          <div class="date" title="{{event.date.month}} / {{event.date.year}}">
+            <span class="year">{{event.date.year}}</span>
+            <span class="month">{{event.date.month}}</span>
+          </div>
+        </timeline-badge>
+        <timeline-panel class="hidden" ng-class="event.badgeClass" when-not-visible="main.animateElementOut" when-visible="main.animateElementIn">
+          <div class="project-deck" ng-class="{'project-active':project.date==''}">
+            <a class="link" href="{{event.url}}" target="_blank">
+              <img alt="project image" class="project-logo" data-imageloaded="" data-loadedclass="animation-faded" data-ng-src="{{event.src}}">
+              <div class="project-description">
+                <p>{{event.description}}</p>
+              </div>
+              <div class="project-title">{{event.title}}</div>
+            </a>
+          </div>
+        </timeline-panel>
+      </timeline-event>
+    </timeline>
+
+  </section>
+
+  <section class="section-container contributions" layout-align="space-around center" layout="column">
+    <h2 class="section-title" layout="row">My Github contributions</h2>
+    <p>Cooming soon...</p>
+    <ul layout-align="space-around center" layout-wrap layout="row"></ul>
+  </section>
+
+  <section class="section-container twitter-activity" layout-align="space-around center" layout="column">
+    <h2 class="section-title" layout="row">My Twitter activity</h2>
+    <p>Cooming soon...</p>
+    <ul layout-align="space-around center" layout-wrap layout="row"></ul>
+  </section>
+
+  <section class="section-container courses" layout-align="space-around center" layout="column">
+    <h2 class="section-title" layout="row">My Badges</h2>
+    <ul layout-align="space-around center" layout-wrap layout="row">
+      <li class="course" ng-repeat="course in main.courses track by course.name">
+        <a href="{{course.url}}" target="_blank">
+          <img alt="{{course.name}}" class="course-icon" ng-src="app/assets/images/{{course.icon}}">
+          <h3 class="course-name" title="{{course.name}}">{{course.name}}</h3>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</md-content>

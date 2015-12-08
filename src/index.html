@@ -1,0 +1,61 @@
+<!doctype html>
+<html ng-app="portfolio">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sergio Morcuende - Portfolio</title>
+  <meta name="description" content="Sergio Morcuende - Portfolio">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <link rel="stylesheet" href="http://rp.js.org/angular-timeline/dist/angular-timeline-animations.css" />
+
+  <!-- build:css({.tmp/serve,src}) styles/app.css -->
+  <!-- inject:css -->
+  <!-- css files will be automatically insert here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div ng-controller="MainController as main" ng-include="'app/main/main.html'"></div>
+  <!-- Footer -->
+  <md-content layout="column" layout-align="center center" class="footer md-dark-theme">
+    <span class="footer__item" flex><a class="link" href="//github.com/smorcuend/portfolio" target="_blank">Made</a> with &#9829; by Sergio (ɔ) 2015</span>
+    <span class="footer__item" flex>Powered by
+      <a href="//angularjs.org" target="_blank" class="link">AngularJS</a> &
+      <a href="//material.angularjs.org" target="_blank" class="link">Material.AngularJS</a> &
+      <a href="//yeoman.io" target="_blank" class="link">Yeoman</a> &
+      <a href="//gulpjs.com" target="_blank" class="link">Gulp</a> &
+      <a href="//bower.io" target="_blank" class="link">Bower</a>
+    </span>
+  </md-content>
+
+  <!-- build:js(src) scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- run `gulp inject` to automatically populate bower script dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+  <!-- inject:js -->
+  <!-- js files will be automatically insert here -->
+  <!-- endinject -->
+
+  <!-- inject:partials -->
+  <!-- angular templates will be automatically converted in js and inserted here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+
+</body>
+
+</html>

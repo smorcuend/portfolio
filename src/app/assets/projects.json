@@ -1,0 +1,45 @@
+[{
+  "id": "bitbloq",
+  "title": "Bitbloq",
+  "src": "app/assets/images/bitbloq.png",
+  "date": {
+    "month": "SEP",
+    "year": 2014
+  },
+  "active": true,
+  "description": "Bitbloq is an educational web application programming micro-controller boards with visual blocks.",
+  "url": "//bitbloq.bq.com"
+}, {
+  "id": "epubviewer",
+  "title": "Html5 Epub Viewer",
+  "src": "app/assets/images/epubreader.png",
+  "date": {
+    "month": "MAR",
+    "year": 2013
+  },
+  "active": false,
+  "description": "ePub reader based on HTML5 for BQ reading platforms.",
+  "url": "//www.nubico.es/"
+}, {
+  "id": "indect",
+  "title": "Indect",
+  "src": "app/assets/images/indect.jpg",
+  "date": {
+    "month": "DEC",
+    "year": 2012
+  },
+  "active": false,
+  "description": "INDECT is a research project in the area of intelligent security systems.",
+  "url": "//indect-project.eu"
+}, {
+  "id": "myui",
+  "title": "MyUI",
+  "src": "app/assets/images/myui.png",
+  "date": {
+    "month": "NOV",
+    "year": 2011
+  },
+  "active": false,
+  "description": "The MyUI European research project aims at increasing and mainstreaming the accessibility of every-day ICT products.",
+  "url": "//myui.eu"
+}]
